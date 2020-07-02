@@ -1,0 +1,142 @@
+:root {
+    --site-bg-color: #d5111f;
+    --site-text-color: #333;
+    --site-gray-color: #dee2e3;
+    --site-rose-color: #FF666D;
+    --site-red-color: #C52983;
+    --site-blue-color: #404a80;
+    --site-brown-color: #795548;
+}
+
+.info-table {
+    border: 0.1rem solid var(--site-gray-color);
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0 1rem 0;
+    background: #fff;
+}
+
+.info-table tr th {
+    border: 0.1rem solid var(--site-gray-color);
+    text-align: left;
+    background: #eef1f3;
+    color: #354146;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 1.5rem;
+}
+
+.info-table tr td {
+    border: 0.1rem solid var(--site-gray-color);
+    text-align: left;
+    color: #354146;
+    font-weight: 400;
+    line-height: 1.6rem;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+}
+
+.info-table tbody tr:hover {
+    background: #eef1f3;
+    cursor: pointer;
+}
+
+
+.test-block {
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0 auto;
+    position: relative;
+    max-width: 70rem;
+    background: #fff;
+    border-radius: 0.5rem;
+}
+
+.test-block .nm {
+    white-space: nowrap;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.test-block i {
+    cursor: pointer;
+    color: var(--site-brown-color);
+}
+
+.test-block i.act {
+    animation: i_act 3s linear infinite;
+}
+
+.test-block .next-page {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 3rem;
+    border-radius: 1rem;
+    width: 15rem;
+    height: 3rem;
+    color: #333;
+    background: #eef1f3;
+    cursor: pointer;
+    margin: 1.5rem auto;
+}
+
+@keyframes i_act {
+    0% {
+        color: rgba(34, 34, 34, 1);
+    }
+    50% {
+        color: rgba(34, 34, 34, 0);
+    }
+    100% {
+        color: rgba(34, 34, 34, 1);
+    }
+}
+
+.test-block tr td.icon {
+    white-space: nowrap;
+    text-align: center;
+}
+
+#actionModal .modal-body {
+    padding-top: 0.3rem;
+}
+
+#actionModal label {
+    margin-bottom: 0.7rem;
+}
+
+#actionModal .msg {
+    height: 1.8rem;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: green;
+    font-weight: bold;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+
+#actionModal .msg.err {
+    color: red;
+}
+
+#actionModal button.close {
+    outline: 0;
+}
+
+
+#actionModal .modal-title {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+#actionModal .close span {
+    font-weight: bold;
+    font-size: 2.1rem;
+}
+
+#actionModal button[name=send] {
+    background: var(--site-brown-color);
+    color: #fff;
+}
