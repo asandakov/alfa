@@ -19,7 +19,6 @@ catch (\Bitrix\Main\Security\Sign\BadSignatureException $e)
 {	
 	die();
 }
-
 $component = new AlfaSite();
 $component->arParams = $component->onPrepareComponentParams($params);
 $component->executeComponent();
