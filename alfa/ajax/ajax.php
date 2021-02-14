@@ -1,7 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/main/include/prolog_before.php");
 if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <?
-//
+//11
 global $DB,$USER,$APPLICATION;
 CBitrixComponent::includeComponentClass("site:alfa");
 
