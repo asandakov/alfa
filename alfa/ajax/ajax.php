@@ -7,7 +7,7 @@ CBitrixComponent::includeComponentClass("site:alfa");
 
 $request = Bitrix\Main\Application::getInstance()->getContext()->getRequest();
 $request->addFilter(new \Bitrix\Main\Web\PostDecodeFilter);
-
+//
 $signer = new \Bitrix\Main\Security\Sign\Signer;
 try
 {
